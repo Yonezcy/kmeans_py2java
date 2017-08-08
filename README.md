@@ -1,2 +1,7 @@
 # Java_Call_Python
 Java调用Python中Tensorflow实现的KMeans算法，以Spark中的Dataframe格式存储结果
+
+在python中使用tensorflow框架实现kmeans算法（截取项目中的一部分），Java中调用python脚本有两种方法，一是使用jython，二是调用命令行的形式，但由于此项目最初是基于windows平台，此平台下的tf只支持python3.5，且jython不支持python外在的包，故调用命令行进行调用。
+
+通过命令行传入参数给python脚本后，python脚本通过sys模块进行获取，并调用编写好的kmeans算法，返回值print出来，通过输出流进行获取。
+注意java传给python和python返回给java的参数都是string类型的，具体需要什么内容要自己解析字符串。
