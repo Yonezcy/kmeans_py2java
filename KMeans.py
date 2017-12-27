@@ -93,31 +93,3 @@ def KMeanscluster(train, cluster_n, max_iter):
             cluster_centers = sess.run(cluster_centers)
             assignments = sess.run(assignments)
     return cluster_centers, assignments
-
-
-
-
-
-
-
-
-
-
-
-
-'''
-a = array([[70, 0.14, 27.89, 194],
-           [30,0.11,19.17,160],
-           [30,0.17,11.46,101],
-           [590,0.31,31.86,203],
-           [1000,0.06,15.94,137],
-           [20,0.29,2.82,16],
-           [20,0.11,6.95,55],
-           [1900,0.22,13.38,123],
-           [50,0.06, 89.06, 246]])
-b = 4
-cluster_centers, assignments = KMeanscluster(a,b)
-print(cluster_centers)
-print(assignments)
-'''
-
